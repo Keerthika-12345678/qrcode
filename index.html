@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid">
+        <center>
+            <h2 id="text1">QR Code Generator</h2>
+            <img src="" id="img">
+        
+        <select id="size">
+            <option value="100">100×100</option>
+            <option value="150">150×150</option>
+            <option value="200">200×200</option>
+            <option value="250" selected>250×250</option>
+            <option value="300">300×300</option>
+        </select>
+        <br>
+        <textarea placeholder="Enter your Text" id="qrtext"></textarea>
+        <br>
+        <input type="submit" value="Generate" onclick="genQR()">
+        <p id="para">Developed By Keerthi</p>
+    </center>
+    </div>
+    <script type="text/javascript">
+        function genQR()
+        {
+        var qrtext=document.getElementById("qrtext").value;
+        var size=document.getElementById("size").value;
+        var img=document.getElementById("img");
+        var gap="https://chart.googleapis.com/chart?chs=";
+        if(qrtext!=="" && size=="100")
+        {
+            img.src=gap+"100x100"+"&cht=qr&chl="+qrtext;
+        }
+        else  if(qrtext!=="" && size=="150")
+        {
+            img.src=gap+"150x150"+"&cht=qr&chl="+qrtext;
+        }
+        else if(qrtext!=="" && size=="200")
+        {
+            img.src=gap+"200x200"+"&cht=qr&chl="+qrtext;
+        }
+        else if(qrtext!=="" && size=="250")
+        {
+            img.src=gap+"250x250"+"&cht=qr&chl="+qrtext;
+        }
+        else if(qrtext!=="" && size=="300")
+        {
+            img.src=gap+"300x300"+"&cht=qr&chl="+qrtext;
+        }
+    }
+                
+
+        
+
+        
+
+
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+*{
+    padding: 0%;
+    margin: 0%;
+#text1{
+    padding-top: 80px;
+}
+#size{
+    margin-top: 20px;
+    background-color: lightslategrey;
+}
+#qrtext{
+    margin-top: 20px;
+    background-color: lightgray;
+}
+#submit{
+    margin-top: 20px;
+    background-color: gray;
+}
+#para{
+    margin-top: 20px;
+    color: gray;
+}
+.grid{
+
+}
